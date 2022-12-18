@@ -12201,7 +12201,7 @@ Prompt user if TAG-NAME isn't provided."
 (defun web-mode-attribute-insert (&optional attr-name attr-value)
   "Insert an attribute inside current tag."
   (interactive)
-  (let (attr attr-name attr-value)
+  (let (attr)
     (cond
      ((not (member (get-text-property (point) 'tag-type) '(start void)))
       (message "attribute-insert ** invalid context **"))
